@@ -1,0 +1,81 @@
+
+
+-- 1. UNIDADES_SENAI
+INSERT INTO UNIDADES_SENAI VALUES
+(1, 'SENAI Umuarama', 'Umuarama'),
+(2, 'SENAI Maringa', 'Maringa'),
+(3, 'SENAI Curitiba', 'Curitiba'),
+(4, 'SENAI Londrina', 'Londrina'),
+(5, 'SENAI Cascavel', 'Cascavel');
+
+-- 2. LINHAS_PRODUCAO
+INSERT INTO LINHAS_PRODUCAO VALUES
+(1, 1, 'Montagem de Motores'),
+(2, 1, 'Usinagem'),
+(3, 2, 'Soldagem Industrial'),
+(4, 3, 'Pintura'),
+(5, 4, 'Embalagem');
+
+-- 3. TIPOS_MAQUINA
+INSERT INTO TIPOS_MAQUINA VALUES
+(1, 'Torno CNC', 500),
+(2, 'Fresadora', 600),
+(3, 'Prensa Hidraulica', 400),
+(4, 'Esteira Industrial', 700),
+(5, 'Robo de Solda', 800);
+
+-- 4. TECNICOS
+INSERT INTO TECNICOS VALUES
+(1, 'Carlos Mendes', 'Mecanica', 'SENIOR'),
+(2, 'Ana Souza', 'Eletrica', 'PLENO'),
+(3, 'Marcos Lima', 'Automacao', 'ESPECIALISTA'),
+(4, 'Julia Ferreira', 'Mecanica', 'JUNIOR'),
+(5, 'Rafael Costa', 'Soldagem', 'PLENO');
+
+-- 5. MAQUINAS_SENAI
+INSERT INTO MAQUINAS_SENAI VALUES
+(1, 1, 1, 'SENAI-MAQ-001', '2022-03-15', 'ATIVA'),
+(2, 2, 2, 'SENAI-MAQ-002', '2021-07-20', 'MANUTENCAO'),
+(3, 3, 5, 'SENAI-MAQ-003', '2023-01-10', 'ATIVA'),
+(4, 4, 3, 'SENAI-MAQ-004', '2020-11-05', 'ATIVA'),
+(5, 5, 4, 'SENAI-MAQ-005', '2022-09-12', 'DESATIVADA');
+
+-- 6. COMPONENTES_MAQ
+INSERT INTO COMPONENTES_MAQ VALUES
+(1, 1, 'Rolamento principal', 320, 500),
+(2, 2, 'Fuso de esferas', 580, 600),
+(3, 3, 'Tocha de soldagem', 450, 800),
+(4, 4, 'Bomba hidraulica', 250, 400),
+(5, 5, 'Motor da esteira', 690, 700);
+
+-- 7. ESTOQUE_PECAS
+INSERT INTO ESTOQUE_PECAS VALUES
+(1, 'ROL-6205', 'Rolamento industrial 6205', 30, 45.90),
+(2, 'COR-001', 'Correia de transmissao', 20, 32.50),
+(3, 'SEN-PT100', 'Sensor de temperatura PT100', 15, 89.90),
+(4, 'FIL-HID-10', 'Filtro hidraulico', 12, 76.00),
+(5, 'CAB-SOL-02', 'Cabo para equipamento de solda', 25, 54.75);
+
+-- 8. ORDENS_SERVICO
+INSERT INTO ORDENS_SERVICO VALUES
+(1, 1, 1, '2026-10-01 08:00:00', 'PREVENTIVA', 'CONCLUIDA'),
+(2, 2, 2, '2026-10-03 09:30:00', 'CORRETIVA', 'EM_ANDAMENTO'),
+(3, 3, 3, '2026-10-05 10:15:00', 'PREDITIVA', 'ABERTA'),
+(4, 4, 4, '2026-10-07 13:00:00', 'PREVENTIVA', 'CONCLUIDA'),
+(5, 5, 5, '2026-10-09 14:20:00', 'CORRETIVA', 'CANCELADA');
+
+-- 9. PECAS_OS
+INSERT INTO PECAS_OS VALUES
+(1, 1, 2, 45.90),
+(2, 2, 1, 32.50),
+(3, 3, 2, 89.90),
+(4, 4, 1, 76.00),
+(5, 5, 3, 54.75);
+
+-- 10. HISTORICO_SENSORES
+INSERT INTO HISTORICO_SENSORES VALUES
+(1, 1, 65.50, 2.30, '2026-10-01 08:30:00', 'GERADO_POR_LLM'),
+(2, 2, 82.40, 4.10, '2026-10-03 10:00:00', 'GERADO_POR_LLM'),
+(3, 3, 91.20, 5.60, '2026-10-05 10:45:00', 'GERADO_POR_LLM'),
+(4, 4, 58.70, 1.80, '2026-10-07 13:30:00', 'GERADO_POR_LLM'),
+(5, 5, 72.10, 3.20, '2026-10-09 15:00:00', 'GERADO_POR_LLM');
